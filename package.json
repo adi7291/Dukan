@@ -1,0 +1,16 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "'Apna Dukan built on MERN stack'",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ramesh Anil",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
