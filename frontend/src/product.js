@@ -9,7 +9,7 @@ export const products = [
     countInStock: 15,
     rating: 5,
     numReviews: 120,
-    image: "./images/airpods.jpg",
+    image: "/images/airpods.jpg",
   },
   {
     _id: "2",
@@ -21,7 +21,7 @@ export const products = [
     countInStock: 20,
     rating: 2.6,
     numReviews: 95,
-    image: "./images/alexa.jpg",
+    image: "/images/alexa.jpg",
   },
   {
     _id: "3",
@@ -33,7 +33,7 @@ export const products = [
     countInStock: 8,
     rating: 4.9,
     numReviews: 200,
-    image: "./images/camera.jpg",
+    image: "/images/camera.jpg",
   },
   {
     _id: "4",
@@ -45,7 +45,7 @@ export const products = [
     countInStock: 12,
     rating: 3,
     numReviews: 150,
-    image: "./images/mouse.jpg",
+    image: "/images/mouse.jpg",
   },
   {
     _id: "5",
@@ -57,7 +57,7 @@ export const products = [
     countInStock: 30,
     rating: 2.5,
     numReviews: 85,
-    image: "./images/phone.jpg",
+    image: "/images/phone.jpg",
   },
   {
     _id: "6",
@@ -69,7 +69,7 @@ export const products = [
     countInStock: 30,
     rating: 2.5,
     numReviews: 85,
-    image: "./images/playstation.jpg",
+    image: "/images/playstation.jpg",
   },
   {
     _id: "5",
@@ -79,8 +79,8 @@ export const products = [
     category: "Footwear",
     price: 110,
     countInStock: 30,
-    rating: .5,
+    rating: 0.5,
     numReviews: 85,
-    image: "./images/sample.jpg",
+    image: "/images/sample.jpg",
   },
 ];
