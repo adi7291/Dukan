@@ -1,15 +1,20 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
-import { products } from "../product";
+
 import Rating from "../components/Rating";
+import { useFetchProduct } from "../customHooks/useFetchProduct";
 
 const ProductScree = () => {
   const { id: productId } = useParams();
+  const { products, loading, error } = useFetchProduct();
+
+  console.log(products);
 
   const product = products.find((productItem) => productItem._id === productId);
 
-  console.log(product.image);
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
   return (
     <>
       <Link className="btn btn-light my3" to="/">
