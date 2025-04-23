@@ -1,6 +1,5 @@
 export const products = [
   {
-    _id: "1",
     name: "Airpods",
     description: "Latest iPhone with A15 Bionic chip and Pro camera system",
     brand: "Apple",
@@ -12,7 +11,6 @@ export const products = [
     image: "/images/airpods.jpg",
   },
   {
-    _id: "2",
     name: "Alexa",
     description: "Powerful Android phone with Dynamic AMOLED display",
     brand: "Samsung",
@@ -24,7 +22,6 @@ export const products = [
     image: "/images/alexa.jpg",
   },
   {
-    _id: "3",
     name: "Camers",
     description: "High-performance laptop with Apple Silicon",
     brand: "Apple",
@@ -36,7 +33,6 @@ export const products = [
     image: "/images/camera.jpg",
   },
   {
-    _id: "4",
     name: "Mouse",
     description: "Premium noise-canceling wireless headphones",
     brand: "Sony",
@@ -48,7 +44,6 @@ export const products = [
     image: "/images/mouse.jpg",
   },
   {
-    _id: "5",
     name: "Mobile Phone",
     description: "Classic white sneakers for everyday wear",
     brand: "Nike",
@@ -60,7 +55,6 @@ export const products = [
     image: "/images/phone.jpg",
   },
   {
-    _id: "6",
     name: "Play station",
     description: "Classic white sneakers for everyday wear",
     brand: "Nike",
@@ -72,7 +66,6 @@ export const products = [
     image: "/images/playstation.jpg",
   },
   {
-    _id: "5",
     name: "Sample Image",
     description: "Classic white sneakers for everyday wear",
     brand: "Nike",
