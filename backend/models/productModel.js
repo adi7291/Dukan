@@ -34,6 +34,7 @@ const productSchema = new mongoose.Schema(
       required: true,
     },
     image: {
+      // is sisngle enough to describe products.
       type: "string",
       required: true,
     },
@@ -51,6 +52,8 @@ const productSchema = new mongoose.Schema(
     },
     reviews: [reviewSchema],
     rating: {
+      // why is the duplicate rating when rating are in the reviews
+      // can took avreage of them in fly in controller.
       type: Number,
       required: true,
       default: 0,
