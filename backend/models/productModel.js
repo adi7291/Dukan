@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const reviewSchema = new mongoose.Schema(
   {
     user: {
-      type: mongoose.Schema.Types.objectId,
+      type: mongoose.Schema.Types.ObjectId,
       required: true,
       ref: "User",
     },
@@ -25,21 +25,21 @@ const reviewSchema = new mongoose.Schema(
 const productSchema = new mongoose.Schema(
   {
     user: {
-      type: mongoose.schema.Type.objectId,
+      type: mongoose.Schema.Types.ObjectId,
       required: true,
       ref: "User",
     },
     name: {
-      type: "string",
+      type: String,
       required: true,
     },
     image: {
-      // is sisngle enough to describe products.
-      type: "string",
+      type: String,
       required: true,
+      default: "/images/sample.jpg"
     },
     brand: {
-      type: "string",
+      type: String,
       required: true,
     },
     category: {
@@ -47,13 +47,11 @@ const productSchema = new mongoose.Schema(
       required: true,
     },
     description: {
-      type: "string",
+      type: String,
       required: true,
     },
     reviews: [reviewSchema],
     rating: {
-      // why is the duplicate rating when rating are in the reviews
-      // can took avreage of them in fly in controller.
       type: Number,
       required: true,
       default: 0,
@@ -76,5 +74,5 @@ const productSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-
-export default productSchema;
+const Product = mongoose.model("Product", productSchema);
+export default Product;

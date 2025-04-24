@@ -8,11 +8,15 @@ const userSchema = new mongoose.Schema(
     },
     email: {
       type: String,
-      required: true,
+      unique: true,
+      required: [true, "Please enter an email"],
+      lowercase: true,
     },
     password: {
       type: String,
-      required: true,
+      minlength: [6, "Password should be at least 6 characters"],
+      required: [true, "Please enter a password"],
+      select: false, // Don't include password in queries by default
     },
     isAdmin: {
       type: Boolean,
@@ -25,6 +29,6 @@ const userSchema = new mongoose.Schema(
   }
 );
 
-const User = mongoose.Schema("USer", userSchema);
+const User = mongoose.model("User", userSchema);
 
 export default User;
